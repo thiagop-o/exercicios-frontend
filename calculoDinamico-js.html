@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var numero1, numero2, sinal;
+        numero1 = prompt("Informe o primeiro numero a ser calculado: ");
+        sinal = prompt("Informe a Operação ( + - * / ) : ")
+        while (sinal != "+" && sinal != "-" && sinal != "*" && sinal != "/") {
+            alert("Informe um sinal válido!!!!!")
+            sinal = prompt("Informe a Operação ( + - * / ) : ")
+        }
+        numero2 = prompt("Informe o segundo numero a ser calculado: ");
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        switch (sinal) {
+            case "+":
+                alert("Seu numero final é: " + (numero1 + numero2));
+                break;
+            case "-":
+                alert("Seu numero final é: " + (numero1 - numero2));
+                break;
+            case "*":
+                alert("Seu numero final é: " + (numero1 * numero2));
+                break;
+            case "/":
+                alert("Seu numero final é: " + (numero1 / numero2));
+                break;
+            default:
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
